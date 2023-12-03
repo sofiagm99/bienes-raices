@@ -1,0 +1,427 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --color3: ##191e32;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/* 1 rem = 10px */  
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+p{
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header.header_2{
+    background-image: url(../img/Arquitectura.png);
+}
+
+.header.header_3{
+    background-image: url(../img/imagen1proyecto.jpg);
+}
+
+.header_header4{
+    background-image: url(../img/Casa1.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header.header_5{
+    background-image: url(../img/Casa2.jpg);
+}
+
+.logo-text a {
+    color: #fff;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media(min-width: 768px){
+    .header_texto{
+       margin-top: 15rem;
+    }
+}
+
+.barra{
+    padding-top: 4rem;
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo_nombre{
+    font-weight: 400;
+}
+
+.logo_bold{
+    font-weight: 700;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 1rem; /* Ajusta el margen según tus preferencias */
+    color: #fff;
+}
+
+@media(min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion_enlace{
+    display: bolck;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+.bienvenido {
+    background-color:#191e32;
+    padding: 30px;
+    color: #fff;
+}
+
+.boton-doble-flecha {
+    display:inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: #fff;
+    color: var(--negro);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-doble-flecha:hover {
+    background-color: #191e32;
+    color: white;
+}
+
+.compraventa{
+    background-image: url(../img/casitas.jpg);
+    color: var(--blanco);
+    height: 40rem;
+    padding-top: 8rem;
+    background-size:cover;
+    background-position: center center;
+}
+
+@media(min-width:768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.boton-info{
+    display:inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid #191e32;
+    background-color: #191e32;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-info:hover {
+    background-color: var(--blanco);
+    color: #191e32;
+}
+
+.boton-comprar{
+    display:inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: #fff;
+    color: var(--negro);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+    background-color: #191e32;
+    color: white;
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border:  none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.tabla{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #050901;
+}
+
+.depto-table tr {
+    display: flex;
+}
+
+td {
+    border: 1px solid #ffffff;
+    padding: 15px;
+    text-align: center; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.numero
+{
+    color: var(--color3);
+}
+
+.frase{
+    text-align: center;
+    font-weight: 200;
+}
+
+.frase1{
+    background-color: var(--color2);
+    text-align: center;
+    color: var(--blanco);
+}
+
+.venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.venta-texto {
+    max-width: 600px;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: normal;
+    display: flex; flex-direction: column; 
+}
+
+.tabla-2 td {
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.tabla-2 tr {
+    width: 100%;
+    display: flex;
+}
+
+.ubicación-r{
+    color: var(--color3);
+}
+
+.footer{
+    background-color:#191e32;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+@media(min-width:768px){
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo_field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo_field--textarea{
+   height: 20rem;
+}
+
+.contenedor .contenedor-elementos {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 100px 0 50px;
+}
+
+.contenedor-elementos-anuncios {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.contenedor-fila {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.contenedor-columna {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.contenedor-elemento {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenedor-elemento .direccion {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.mapa {
+    width: 100%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.img-venta {
+    max-width: 100%;
+    height: auto;
+}
